@@ -232,12 +232,12 @@
         "description": "Add a new markdown cell"
     },
     "# -*- coding=utf-8 -*-": {
-        "prefix": "enco",
+        "prefix": "#enco",
         "body": "# -*- coding=utf-8 -*-\n$0",
         "description" : "set default python2.x encoding specification to utf-8 as it is mentioned in pep-0263."
     },
     "# coding=utf-8": {
-        "prefix": "enc",
+        "prefix": "#enc",
         "body": "# coding=utf-8\n$0",
         "description" : "Set default python3 encoding specification to utf-8, by default this is the encoding for python3.x as it is mentioned in pep-3120."
     }
