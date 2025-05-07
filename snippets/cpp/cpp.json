@@ -306,6 +306,25 @@
       ],
       "description": "const_cast<type>(expression)"
     },
+    "include once": {
+        "prefix": "#once",
+        "body": [
+            "ifndef __${1:FILE}_H__",
+            "#define __$1_H__",
+            "",
+            "#ifdef __cplusplus",
+            "extern \"C\" {",
+            "#endif",
+            "",
+            "$0",
+            "",
+            "#ifdef __cplusplus",
+            "}",
+            "#endif",
+            "#endif /* end of include guard: __$1_H__ */"
+        ],
+        "description": "Header include guard"
+    },
     "af": {
       "prefix": "af",
       "body": [

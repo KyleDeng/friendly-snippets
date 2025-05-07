@@ -4,6 +4,37 @@
         "body": "#!/usr/bin/env python$0",
         "description": "Shebang line for the first python in PATH"
     },
+    "#enc2": {
+        "prefix": "#enc2",
+        "body": [
+            "!/usr/bin/env python",
+            "# -*- coding=utf-8 -*-",
+            ""
+        ],
+        "description": "encoding python2"
+    },
+    "#enc3": {
+        "prefix": "#enc3",
+        "body": [
+            "!/usr/bin/env python3",
+            "# coding=utf-8",
+            ""
+        ],
+        "description": "encoding python3"
+    },
+    "main": {
+        "prefix": "main",
+        "body": [
+            "def main():",
+            "\tprint(\"Hello World!\")",
+            "\tpass",
+            "",
+            "",
+            "if __name__ == \"__main__\":",
+            "\t${1:main()}"
+        ],
+        "description": "Execute code if the file is executed directly"
+    },
     "pyright ignore line": {
         "prefix": "#ignore",
         "body": "# pyright: ignore[$0]",
